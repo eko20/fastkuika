@@ -1,9 +1,8 @@
 
 from fastapi import FastAPI
 from pydantic import BaseModel
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_openai import ChatOpenAI
-from typing import Union
+
+
 
 app = FastAPI()
 
@@ -12,9 +11,6 @@ class QueryRequest(BaseModel):
     query: str
     
 
-
-    
-file_path = "C:\\Users\\mekin\\Desktop\\IPCC_AR6_WGII_Chapter03.pdf"
 
 
 
